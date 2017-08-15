@@ -221,7 +221,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>(map)&lt;([A-Za-z][A-Za-z0-9_.]*),\s*([A-Za-z][A-Za-z0-9_.]*)&gt;\s+([A-Za-z][A-Za-z0-9_]*)</string>
+							<string>(map)&lt;(int32|int64|uint32|uint64|sint32|sint64|fixed32|fixed64|sfixed32|sfixed64|bool|string),\s*([A-Za-z][A-Za-z0-9_.]*)&gt;\s+([A-Za-z][A-Za-z0-9_]*)</string>
 						</dict>
 						<dict>
 							<key>captures</key>
