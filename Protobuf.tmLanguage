@@ -221,7 +221,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>(map)&lt;([A-Za-z][A-Za-z0-9_]*),\s*([A-Za-z][A-Za-z0-9_]*)&gt;\s+([A-Za-z][A-Za-z0-9_]*)</string>
+							<string>(map)&lt;([A-Za-z][A-Za-z0-9_.]*),\s*([A-Za-z][A-Za-z0-9_.]*)&gt;\s+([A-Za-z][A-Za-z0-9_]*)</string>
 						</dict>
 						<dict>
 							<key>captures</key>
@@ -233,7 +233,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>([A-Za-z][A-Za-z0-9_]*)(\s+)([A-Za-z][A-Za-z0-9_]*)</string>
+							<string>([A-Za-z][A-Za-z0-9_.]*)(\s+)([A-Za-z][A-Za-z0-9_]*)</string>
 						</dict>
 						<dict>
 							<key>captures</key>
@@ -315,7 +315,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>([A-Za-z][A-Za-z0-9_]*)(\s+)([A-Za-z][A-Za-z0-9_]*)(\s*)(=)(\s*)([0-9]*)</string>
+					<string>([A-Za-z][A-Za-z0-9_.]*)(\s+)([A-Za-z][A-Za-z0-9_]*)(\s*)(=)(\s*)([0-9]*)</string>
 				</dict>
 			</array>
 		</dict>
