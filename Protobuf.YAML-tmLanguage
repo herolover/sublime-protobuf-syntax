@@ -21,6 +21,8 @@ patterns:
 
 - include: '#oneof'
 
+- include: '#syntax'
+
 - include: '#packaging'
 
 - include: '#service'
@@ -120,6 +122,14 @@ repository:
       match: default|packed|optimize\_for|java\_package|java\_outer\_classname|go\_package|deprecated|lazy|\w+\_api\_version
     - name: constant.language.proto
       match: (CODE\_SIZE|SPEED)
+
+  syntax:
+    begin: (syntax)(\s*)(=)(\s*)
+    beginCaptures:
+      '1': {name: keyword.source.proto}
+    end: ;
+    patterns:
+    - include: '#strings'
 
   packaging:
     match: (package|import)(?=(\s+)(["]?[A-Za-z][A-Za-z0-9-_./]*["]?)(;))

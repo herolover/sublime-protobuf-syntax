@@ -44,6 +44,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#syntax</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#packaging</string>
 		</dict>
 		<dict>
@@ -350,6 +354,28 @@
 					<string>(CODE\_SIZE|SPEED)</string>
 					<key>name</key>
 					<string>constant.language.proto</string>
+				</dict>
+			</array>
+		</dict>
+		<key>syntax</key>
+		<dict>
+			<key>begin</key>
+			<string>(syntax)(\s*)(=)(\s*)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.proto</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>;</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#strings</string>
 				</dict>
 			</array>
 		</dict>
