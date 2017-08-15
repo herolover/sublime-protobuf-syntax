@@ -124,12 +124,10 @@ repository:
       match: (CODE\_SIZE|SPEED)
 
   syntax:
-    begin: (syntax)(\s*)(=)(\s*)
-    beginCaptures:
+    match: (syntax)(\s*)=(\s*)("(proto2|proto3)");
+    captures:
       '1': {name: keyword.source.proto}
-    end: ;
-    patterns:
-    - include: '#strings'
+      '4': {name: string.quoted.double.proto}
 
   packaging:
     match: (package|import)(?=(\s+)(["]?[A-Za-z][A-Za-z0-9-_./]*["]?)(;))

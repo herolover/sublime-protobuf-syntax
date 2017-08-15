@@ -359,25 +359,21 @@
 		</dict>
 		<key>syntax</key>
 		<dict>
-			<key>begin</key>
-			<string>(syntax)(\s*)(=)(\s*)</string>
-			<key>beginCaptures</key>
+			<key>match</key>
+			<string>(syntax)(\s*)=(\s*)("(proto2|proto3)");</string>
+			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.source.proto</string>
 				</dict>
-			</dict>
-			<key>end</key>
-			<string>;</string>
-			<key>patterns</key>
-			<array>
+				<key>4</key>
 				<dict>
-					<key>include</key>
-					<string>#strings</string>
+					<key>name</key>
+					<string>string.quoted.double.proto</string>
 				</dict>
-			</array>
+			</dict>
 		</dict>
 		<key>packaging</key>
 		<dict>
